@@ -28,7 +28,7 @@ jobs:
         run: npm run electron:build
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: emby-player-${{ matrix.os }}
           path: dist/**
